@@ -1,0 +1,11 @@
+[package]
+name = "fltk_heap_corruption"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+fltk = { version = "1.2.23", features = ["fltk-bundled"] }
+fltk-theme = "0.4"
+sysinfo = "0.22.3"
