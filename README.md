@@ -6,4 +6,4 @@ Just put `let mut my_app = MyApp::new();` before `let a = app::App::default();` 
 
 Basically moving `let mut my_app = MyApp::new();`  which calls `sysinfo::System::new_all()` to the beginning of main, i.e. before window creation should fix the issue. The sysinfo System window's component vec basically resizes and the drop calls [CoUninitialize](https://docs.microsoft.com/en-us/windows/win32/api/combaseapi/nf-combaseapi-couninitialize)
 
-Credits for the fix: mo_al_#3796 in the Rust Programming Language Community Server
+Credits for the fix: `mo_al_#3796` in the Rust Programming Language Community Discord Server
