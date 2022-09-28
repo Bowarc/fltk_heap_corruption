@@ -17,15 +17,15 @@ struct MyApp {
 enum SysInfo {
     RamUsage,
     RamTotal,
-    // DiskName(usize), // index
-    // DiskType(usize),
-    // DiskFileSystem(usize),
-    // DiskMountPoint(usize),
-    // DiskAvailableSpace(usize),
-    // DiskTotalSpace(usize),
-    // NetworkName(usize),
-    // NetworkDataReceived(usize),
-    // NetworkDataTransmited(usize),
+    DiskName(usize), // index
+    DiskType(usize),
+    DiskFileSystem(usize),
+    DiskMountPoint(usize),
+    DiskAvailableSpace(usize),
+    DiskTotalSpace(usize),
+    NetworkName(usize),
+    NetworkDataReceived(usize),
+    NetworkDataTransmited(usize),
 }
 
 impl MyApp {
